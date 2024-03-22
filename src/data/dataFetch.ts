@@ -9,7 +9,7 @@ export const getCharacters = async (src: string) => {
 
 export const getEpisodes = async () => {
 	try {
-		const allCharacters = fetch('https://rickandmortyapi.com/api/character/2').then((res) => res.json());
+		const allCharacters = fetch('https://rickandmortyapi.com/api/episode').then((res) => res.json());
 		return allCharacters;
 	} catch (error) {
 		console.log(error);
